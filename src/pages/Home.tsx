@@ -372,7 +372,6 @@ const Home = () => {
           </div>
           
           <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">Showing {allServices.length} professional services • Click arrows to navigate</p>
             <a href="/services" className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white hover:bg-blue-700 font-semibold rounded-lg transition-all duration-300 transform hover:scale-105">
               View All Services
               <ArrowRight className="ml-2 h-5 w-5" />
