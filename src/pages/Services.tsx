@@ -432,17 +432,17 @@ const Services = () => {
 
             {/* Search Bar with icon INSIDE (kept + refined) */}
             <div className="max-w-2xl mx-auto">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-200 h-5 w-5 pointer-events-none" />
-                <input
-                  type="text"
-                  placeholder="Search services..."
-                  value={searchTerm}
-                  onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-12 pr-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/30 transition-all duration-300"
-                />
-              </div>
-            </div>
+  <div className="relative bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden">
+    <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-200 h-5 w-5 pointer-events-none" />
+    <input
+      type="text"
+      placeholder="Search services..."
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+      className="w-full pl-12 pr-4 py-3 bg-transparent text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/30 focus:border-white/30 transition-all duration-300"
+    />
+  </div>
+</div>
           </motion.div>
         </div>
       </section>
